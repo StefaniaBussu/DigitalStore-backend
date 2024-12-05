@@ -1,5 +1,5 @@
 const tabelaUser = require('./models/user');
-const respostas = require('../responses');
+const respostas = require('../respostas/responses');
 const bcrypt = require('bcrypt');
 
 async function getUserId(req, res) {

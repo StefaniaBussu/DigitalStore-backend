@@ -46,4 +46,3 @@ Este é o projeto de um back-end para uma loja virtual, desenvolvido com Node.js
 - [Stefania Oliveira Bussu](https://github.com/StefaniaBussu)
 - [Maria Estefânia Lima](https://github.com/mel1ma)
 
-3 

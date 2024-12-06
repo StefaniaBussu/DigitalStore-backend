@@ -14,13 +14,13 @@ Este é o projeto de um back-end para uma loja virtual, desenvolvido com Node.js
 
 1. Clone o repositório:
 
-   *bash*
+   **bash**
    git clone https://github.com/StefaniaBussu/DigitalStore-backend.git
    cd DigitalStore-backend
 
-2.Instale as dependências:
+ 2.Instale as dependências:
 
-   npm install
+    npm install
 
 
 3. Rodar o Servidor:

@@ -7,8 +7,8 @@ const ProductImage = require('./models/ProductImage');
 const ProductOption = require('./models/ProductOption');
 const ProductCategory = require('./models/ProductCategory');
 
-// Sincroniza todos os modelos com o banco
-sequelize.sync({ force: false })  // Use 'force: false' ou 'alter: true' em vez de 'force: true' para evitar deletar tabelas
+
+sequelize.sync({ force: false })
   .then(() => {
     console.log('Banco de dados sincronizado!');
   })

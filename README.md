@@ -25,7 +25,6 @@ Este é o projeto de um back-end para uma loja virtual, desenvolvido com Node.js
 
 3. Rodar o Servidor:
 
-   bash
    node src/server.js
 
 

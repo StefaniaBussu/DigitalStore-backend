@@ -4,7 +4,7 @@ const { User } = require('../models');
 
 const SECRET_KEY = process.env.JWT_SECRET || "senha-unicaa";
 
-class AuthService {
+class ServiceLogin {
   async login({ email, password }) {
     const user = await User.findOne({ where: { email } });
     if (!user) throw new Error("Credenciais inválidas");

@@ -2,8 +2,8 @@ const { Produto } = require("../models");
 
 class ProdutoService {
   async createProduto({
-    name,
-    price,
+    nome,
+    preco,
     price_with_discount,
     enabled = false,
     use_in_menu = false,
@@ -12,12 +12,13 @@ class ProdutoService {
   }) {
     try {
       const produto = await Produto.create({
-        name,
-        price,
+        nome,
+        preco,
         price_with_discount,
         enabled,
         use_in_menu,
         stock,
+        slug: slugify(nome),
         description,
       });
       return produto;

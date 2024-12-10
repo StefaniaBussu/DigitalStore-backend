@@ -14,7 +14,8 @@ Product.init({
   },
   slug: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
+    unique: true
   },
   use_in_menu: {
     type: DataTypes.BOOLEAN,
@@ -35,7 +36,8 @@ Product.init({
     type: DataTypes.FLOAT,
     allowNull: false
   }
-}, {
+}, 
+{
   sequelize,
   modelName: 'Product',
   timestamps: true

@@ -1,11 +1,12 @@
-const { Category } = require("../models/category");
+const { Category } = require("../models/Category");
 
 class CategoriaService {
   async createCategory({ name, use_in_menu = false }) {
     try {
       const category = await Category.create({
-        name,
+        nome,
         use_in_menu,
+        slug: slugify(name)
       });
       return category;
     } catch (error) {
